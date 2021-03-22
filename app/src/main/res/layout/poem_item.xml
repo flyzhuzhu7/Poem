@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#eba"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="140dp"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/poem_title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/poem_writer"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            />
+
+        <!-- 内容太多显示不下时用省略号代替 -->
+        <TextView
+            android:id="@+id/poem_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:maxLines="10"
+            android:gravity="center"
+            android:ellipsize = "end"
+            android:textSize="17sp" />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
